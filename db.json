@@ -1,0 +1,304 @@
+{
+    "data": [
+        {
+            "question": "In 'Naruto,' what is Naruto's dream?",
+            "options": [
+                "To become Hokage",
+                "To find Sasuke",
+                "To master all jutsu",
+                "To eat the biggest ramen bowl"
+            ],
+            "answer": "To become Hokage"
+        },
+        {
+            "question": "What is the name of the organization that seeks to capture the Tailed Beasts in 'Naruto'?",
+            "options": [
+                "Akatsuki",
+                "Konoha",
+                "Suna",
+                "Orochimaru's Clan"
+            ],
+            "answer": "Akatsuki"
+        },
+        {
+            "question": "In 'Attack on Titan,' what is the main threat to humanity?",
+            "options": [
+                "Titans",
+                "Humans",
+                "Giants",
+                "Aliens"
+            ],
+            "answer": "Titans"
+        },
+        {
+            "question": "What is the main ability of the characters in 'Death Note'?",
+            "options": [
+                "Teleportation",
+                "Time travel",
+                "Writing names to kill",
+                "Mind reading"
+            ],
+            "answer": "Writing names to kill"
+        },
+        {
+            "question": "In 'My Hero Academia,' what is Izuku Midoriya's goal?",
+            "options": [
+                "To become the strongest hero",
+                "To find his father",
+                "To inherit All Might's power",
+                "To defeat All For One"
+            ],
+            "answer": "To inherit All Might's power"
+        },
+        {
+            "question": "Who is the main protagonist of 'One Piece'?",
+            "options": [
+                "Roronoa Zoro",
+                "Nami",
+                "Monkey D. Luffy",
+                "Sanji"
+            ],
+            "answer": "Monkey D. Luffy"
+        },
+        {
+            "question": "In 'Sword Art Online,' what is the name of the virtual reality game the characters are trapped in?",
+            "options": [
+                "Gun Gale Online",
+                "Alfheim Online",
+                "Sword Art Online",
+                "Death Game Online"
+            ],
+            "answer": "Sword Art Online"
+        },
+        {
+            "question": "What type of creature is Inuyasha?",
+            "options": [
+                "Demon",
+                "Human",
+                "Angel",
+                "Half-demon"
+            ],
+            "answer": "Half-demon"
+        },
+        {
+            "question": "In 'Fullmetal Alchemist,' what is the law that prevents humans from bringing the dead back to life?",
+            "options": [
+                "Law of Equivalent Exchange",
+                "Law of Alchemy",
+                "Law of Fate",
+                "Law of Nature"
+            ],
+            "answer": "Law of Equivalent Exchange"
+        },
+        {
+            "question": "In 'Demon Slayer,' what is Tanjiro's main objective?",
+            "options": [
+                "To become a Hashira",
+                "To kill Muzan",
+                "To find a cure for Nezuko",
+                "To master breathing techniques"
+            ],
+            "answer": "To find a cure for Nezuko"
+        },
+        {
+            "question": "What is the main power of the character Ichigo Kurosaki in 'Bleach'?",
+            "options": [
+                "Time manipulation",
+                "Soul reaping",
+                "Elemental control",
+                "Telepathy"
+            ],
+            "answer": "Soul reaping"
+        },
+        {
+            "question": "In 'Fairy Tail,' what is Natsu Dragneel searching for?",
+            "options": [
+                "His father",
+                "The strongest wizard",
+                "The Dragon Slayer",
+                "Igneel"
+            ],
+            "answer": "Igneel"
+        },
+        {
+            "question": "What is the name of the female lead in 'Fruits Basket'?",
+            "options": [
+                "Akito",
+                "Tohru",
+                "Shigure",
+                "Rin"
+            ],
+            "answer": "Tohru"
+        },
+        {
+            "question": "In 'Your Name,' what supernatural phenomenon occurs between the two main characters?",
+            "options": [
+                "Time travel",
+                "Body swapping",
+                "Telepathy",
+                "Dream sharing"
+            ],
+            "answer": "Body swapping"
+        },
+        {
+            "question": "In 'Tokyo Ghoul,' what is Kaneki's transformation?",
+            "options": [
+                "Human to demon",
+                "Human to ghoul",
+                "Ghoul to angel",
+                "Human to monster"
+            ],
+            "answer": "Human to ghoul"
+        },
+        {
+            "question": "What is the name of the detective in 'Death Note'?",
+            "options": [
+                "L",
+                "Light",
+                "Near",
+                "Mello"
+            ],
+            "answer": "L"
+        },
+        {
+            "question": "In 'One Punch Man,' what is Saitama's main frustration?",
+            "options": [
+                "Lack of power",
+                "Boredom with his strength",
+                "His love life",
+                "Finding a worthy opponent"
+            ],
+            "answer": "Boredom with his strength"
+        },
+        {
+            "question": "In 'Hunter x Hunter,' what is Gon Freecss searching for?",
+            "options": [
+                "His mother",
+                "His father",
+                "The strongest hunter",
+                "A rare treasure"
+            ],
+            "answer": "His father"
+        },
+        {
+            "question": "What is the name of the school in 'High School DxD'?",
+            "options": [
+                "Kuoh Academy",
+                "Yokai Academy",
+                "Blue Exorcist Academy",
+                "Cross Academy"
+            ],
+            "answer": "Kuoh Academy"
+        },
+        {
+            "question": "In 'Code Geass,' what is Lelouch's alter ego?",
+            "options": [
+                "Zero",
+                "Raven",
+                "Shadow",
+                "Phantom"
+            ],
+            "answer": "Zero"
+        },
+        {
+            "question": "In 'Steins;Gate,' what is the main theme of the story?",
+            "options": [
+                "Time travel",
+                "Parallel universes",
+                "Genetic engineering",
+                "Virtual reality"
+            ],
+            "answer": "Time travel"
+        },
+        {
+            "question": "In 'Mob Psycho 100,' what is Mob's real name?",
+            "options": [
+                "Shigeo Kageyama",
+                "Reigen Arataka",
+                "Teruki Tamura",
+                "Ritsu Kageyama"
+            ],
+            "answer": "Shigeo Kageyama"
+        },
+        {
+            "question": "In 'Sword Art Online,' who does Kirito fall in love with?",
+            "options": [
+                "Asuna",
+                "Leafa",
+                "Sinon",
+                "Lizbeth"
+            ],
+            "answer": "Asuna"
+        },
+        {
+            "question": "In 'Assassination Classroom,' what is Koro-sensei's ultimate goal?",
+            "options": [
+                "To destroy the Earth",
+                "To become a hero",
+                "To teach his students",
+                "To find a cure for his condition"
+            ],
+            "answer": "To teach his students"
+        },
+        {
+            "question": "What is the main setting of 'No Game No Life'?",
+            "options": [
+                "A fantasy world",
+                "A virtual reality game",
+                "A post-apocalyptic world",
+                "A high school"
+            ],
+            "answer": "A fantasy world"
+        },
+        {
+            "question": "In 'The Seven Deadly Sins,' what sin does Meliodas represent?",
+            "options": [
+                "Greed",
+                "Wrath",
+                "Lust",
+                "Gluttony"
+            ],
+            "answer": "Lust"
+        },
+        {
+            "question": "In 'Re:Zero - Starting Life in Another World,' what unique ability does Subaru Natsuki have?",
+            "options": [
+                "Time travel",
+                "Death resurrection",
+                "Teleportation",
+                "Invisibility"
+            ],
+            "answer": "Death resurrection"
+        },
+        {
+            "question": "In 'Fairy Tail,' what is the name of the guild where Natsu belongs?",
+            "options": [
+                "Phantom Lord",
+                "Blue Pegasus",
+                "Fairy Tail",
+                "Grimoire Heart"
+            ],
+            "answer": "Fairy Tail"
+        },
+        {
+            "question": "In 'Black Clover,' what type of magic does Asta lack?",
+            "options": [
+                "Fire magic",
+                "Healing magic",
+                "Magic altogether",
+                "Light magic"
+            ],
+            "answer": "Magic altogether"
+        },
+        {
+            "question": "In 'Soul Eater,' what are the students at the Death Weapon Meister Academy training to do?",
+            "options": [
+                "Become witches",
+                "Collect souls",
+                "Become meisters and demon weapons",
+                "Fight titans"
+            ],
+            "answer": "Become meisters and demon weapons"
+        }
+    ]
+}
