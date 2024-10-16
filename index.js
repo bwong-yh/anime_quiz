@@ -84,6 +84,8 @@ const main = () => {
 
       if (selectedAnswers.value === answers[index]) {
         score++;
+        selectedAnswers.parentElement.classList.add('alert', 'alert-success');
+        selectedAnswers.nextElementSibling.classList.add('text-success');
       } else {
         selectedAnswers.parentElement.classList.add('alert', 'alert-danger');
         selectedAnswers.nextElementSibling.classList.add('text-danger');
@@ -96,13 +98,14 @@ const main = () => {
     const resultText = result.querySelector('span');
 
     let output = 0;
-    score = (score / questions.length) * 100;
 
     setTimeout(() => {
       const timer = setInterval(() => {
         resultText.innerText = `${output}%`;
 
-        output === score ? clearInterval(timer) : output++;
+        output === (score / questions.length) * 100
+          ? clearInterval(timer)
+          : output++;
       }, 25);
     }, 750);
   });
