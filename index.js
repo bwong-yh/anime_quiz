@@ -8,17 +8,43 @@ const getQuestions = questionList => {
   return questionList.slice(0, 10);
 };
 
-// // generate html template
-const generateQuestions = questions => {
-  const quiz = document.querySelector('.quiz-form');
+// generate html template
 
-  questions.forEach(question => {
-    const questionEl = document.createElement('div');
-    questionEl.innerHTML = `
-<label>${question.question}</label>
-`;
-    quiz.appendChild(questionEl);
+const quiz = document.querySelector('.quiz-form');
+
+const createSubmitBtn = () => {
+  const submitBtn = document.createElement('input');
+  submitBtn.type = 'submit';
+  submitBtn.value = 'submit';
+  quiz.appendChild(submitBtn);
+};
+
+const generateQuestions = questions => {
+  questions.forEach((question, index) => {
+    const questionBox = document.createElement('div');
+    questionBox.setAttribute('class', 'my-5');
+
+    const questionLabel = document.createElement('p');
+    questionLabel.setAttribute('class', 'lead font-weight-normal');
+    questionLabel.innerText = question.question;
+
+    const optionsHTML = question.options
+      .map(option => {
+        return `
+      <div class="form-check my-2 text-white-50">
+        <input type="radio" name="q${index + 1}" value="${option}">
+        <label class="form-check-label">${option}</label>
+      </div>
+      `;
+      })
+      .join('');
+
+    questionBox.appendChild(questionLabel);
+    questionBox.innerHTML += optionsHTML;
+    quiz.appendChild(questionBox);
   });
+
+  createSubmitBtn();
 };
 
 const main = () => {
