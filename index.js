@@ -12,39 +12,46 @@ const getQuestions = questionList => {
 
 const quiz = document.querySelector('.quiz-form');
 
-const createSubmitBtn = () => {
-  const submitBtn = document.createElement('input');
-  submitBtn.type = 'submit';
-  submitBtn.value = 'submit';
-  quiz.appendChild(submitBtn);
+const createQuestionBox = content => {
+  return `<div class="my-5">${content}</div>`;
 };
 
-const generateQuestions = questions => {
-  questions.forEach((question, index) => {
-    const questionBox = document.createElement('div');
-    questionBox.setAttribute('class', 'my-5');
+const createQuestion = (question, index) => {
+  return `<p class="lead font-weight-normal">${question.question}</p>`;
+};
 
-    const questionLabel = document.createElement('p');
-    questionLabel.setAttribute('class', 'lead font-weight-normal');
-    questionLabel.innerText = question.question;
-
-    const optionsHTML = question.options
-      .map(option => {
-        return `
+const createOptions = (question, index) => {
+  return question.options
+    .map(option => {
+      return `
       <div class="form-check my-2 text-white-50">
         <input type="radio" name="q${index + 1}" value="${option}">
         <label class="form-check-label">${option}</label>
       </div>
       `;
-      })
-      .join('');
+    })
+    .join('');
+};
 
-    questionBox.appendChild(questionLabel);
-    questionBox.innerHTML += optionsHTML;
-    quiz.appendChild(questionBox);
-  });
+const generateQuestions = questions => {
+  const questionsBox = questions
+    .map((question, index) => {
+      const q = createQuestion(question, index);
+      const options = createOptions(question, index);
 
-  createSubmitBtn();
+      return createQuestionBox(q + options);
+    })
+    .join('');
+
+  quiz.innerHTML += questionsBox;
+};
+
+const createSubmitBtn = () => {
+  const submitBtn = document.createElement('input');
+  submitBtn.type = 'submit';
+  submitBtn.value = 'Submit';
+
+  quiz.appendChild(submitBtn);
 };
 
 const main = () => {
@@ -53,6 +60,7 @@ const main = () => {
     .then(data => {
       const questions = getQuestions(data.data);
       generateQuestions(questions);
+      createSubmitBtn();
     });
 };
 
