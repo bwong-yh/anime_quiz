@@ -53,6 +53,7 @@ const createSubmitBtn = () => {
   const submitBtn = document.createElement('input');
   submitBtn.type = 'submit';
   submitBtn.value = 'Submit';
+  submitBtn.setAttribute('class', 'btn btn-light');
 
   quiz.appendChild(submitBtn);
 };
@@ -75,16 +76,19 @@ const main = () => {
     let score = 0;
 
     const answers = questions.map(question => question.answer);
-    const userAnswers = questions.map((_, index) => {
-      const selectedAnswers = document.querySelector(
+
+    questions.forEach((_, index) => {
+      const selectedAnswers = quiz.querySelector(
         `input[name=q${index + 1}]:checked`
       );
-      return selectedAnswers.value;
-    });
 
-    userAnswers.forEach(
-      (answer, index) => answer === answers[index] && score++
-    );
+      if (selectedAnswers.value === answers[index]) {
+        score++;
+      } else {
+        selectedAnswers.parentElement.classList.add('alert', 'alert-danger');
+        selectedAnswers.nextElementSibling.classList.add('text-danger');
+      }
+    });
 
     scrollTo(0, 0);
 
