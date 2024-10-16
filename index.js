@@ -9,7 +9,6 @@ const getQuestions = questionList => {
 };
 
 // generate html template
-
 const quiz = document.querySelector('.quiz-form');
 
 const createQuestionBox = content => {
@@ -22,10 +21,14 @@ const createQuestion = (question, index) => {
 
 const createOptions = (question, index) => {
   return question.options
-    .map(option => {
+    .map((option, i) => {
       return `
       <div class="form-check my-2 text-white-50">
-        <input type="radio" name="q${index + 1}" value="${option}">
+        <input 
+          type="radio" 
+          name="q${index + 1}" value="${option}" 
+          ${i === 0 && 'checked'}
+        >
         <label class="form-check-label">${option}</label>
       </div>
       `;
@@ -55,13 +58,50 @@ const createSubmitBtn = () => {
 };
 
 const main = () => {
+  let questions = null;
+
   fetch('./db.json')
     .then(response => response.json())
     .then(data => {
-      const questions = getQuestions(data.data);
+      questions = getQuestions(data.data);
       generateQuestions(questions);
       createSubmitBtn();
     });
+
+  quiz.addEventListener('submit', e => {
+    e.preventDefault();
+
+    const result = document.querySelector('.result');
+    let score = 0;
+
+    const answers = questions.map(question => question.answer);
+    const userAnswers = questions.map((_, index) => {
+      const selectedAnswers = document.querySelector(
+        `input[name=q${index + 1}]:checked`
+      );
+      return selectedAnswers.value;
+    });
+
+    userAnswers.forEach(
+      (answer, index) => answer === answers[index] && score++
+    );
+
+    scrollTo(0, 0);
+
+    result.classList.remove('d-none');
+    const resultText = result.querySelector('span');
+
+    let output = 0;
+    score = (score / questions.length) * 100;
+
+    setTimeout(() => {
+      const timer = setInterval(() => {
+        resultText.innerText = `${output}%`;
+
+        output === score ? clearInterval(timer) : output++;
+      }, 25);
+    }, 750);
+  });
 };
 
 main();
